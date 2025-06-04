@@ -1,36 +1,52 @@
+/* 基础样式 */
 body {
     margin: 60px auto;
     width: 70%;
-    /* 中文字体栈 */
     font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+    color: #444;
+    line-height: 1.8;
 }
 
 a {
     text-decoration: none;
     color: #4285f4;
-    /* 更醒目的链接色 */
     transition: color 0.3s ease;
 }
 
 a:hover {
     text-decoration: underline;
     color: #ea4335;
-    /* 悬停变色 */
 }
 
-p,
-ul {
+p {
     font-size: 1.1em;
-    /* 稍小的正文字号 */
-    line-height: 1.8em;
-    /* 增加行高 */
-    color: #444;
-    /* 深灰色更柔和 */
     margin-bottom: 1.2em;
-    /* 增加段间距 */
+    text-indent: 2em;
 }
 
-/* 标题层级优化 */
+/* 引用块样式 */
+blockquote {
+    border-left: 4px solid #4285f4;
+    background-color: #f8f9fa;
+    padding: 12px 20px;
+    margin: 1.5em 0;
+    font-style: italic;
+    color: #555;
+}
+
+/* 标题优化 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    line-height: 1.3;
+    text-indent: 0;
+}
+
 h1 {
     font-size: 2.2em;
 }
@@ -47,16 +63,44 @@ h4 {
     font-size: 1.4em;
 }
 
-/* 标题增加间距 */
-h1,
-h2,
-h3,
-h4 {
-    margin-top: 1.5em;
-    margin-bottom: 0.8em;
-    line-height: 1.3;
+/* 列表优化 */
+ul,
+ol {
+    padding-left: 2em;
+    margin-bottom: 1.2em;
 }
 
+ul:not(.posts) {
+    font-size: 1.1em;
+}
+
+ul ul,
+ol ul {
+    font-size: 1em;
+}
+
+ul.posts {
+    margin: 30px auto 50px;
+    font-size: 1.2em;
+    padding-left: 1.5em;
+}
+
+ul.posts li {
+    position: relative;
+    margin-bottom: 1em;
+    list-style: none;
+}
+
+ul.posts li:before {
+    content: "•";
+    color: #ea4335;
+    position: absolute;
+    left: -1em;
+    top: 0.15em;
+    font-size: 1.1em;
+}
+
+/* 导航和页脚 */
 nav ul,
 footer ul {
     font-size: 1em;
@@ -68,54 +112,46 @@ nav ul li,
 footer ul li {
     display: inline;
     margin-right: 25px;
-    /* 增加导航项间距 */
 }
 
 footer {
     border-top: 1px solid #eaeaea;
-    /* 更浅的分隔线 */
     font-size: 0.9em;
     margin-top: 3em;
     padding-top: 1.5em;
     color: #777;
 }
 
-/* 博客文章列表优化 */
-ul.posts {
-    margin: 30px auto 50px;
-    /* 增加列表间距 */
-    font-size: 1.2em;
-    padding-left: 1.5em;
-    /* 中文缩进 */
+/* 代码块样式 */
+pre,
+code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    background-color: #f5f5f5;
+    border-radius: 3px;
 }
 
-ul.posts li {
-    list-style: none;
-    position: relative;
-    margin-bottom: 1em;
+pre {
+    padding: 1em;
+    overflow: auto;
+    border: 1px solid #ddd;
+    line-height: 1.5;
 }
 
-/* 添加中文项目符号 */
-ul.posts li:before {
-    content: "•";
-    color: #ea4335;
-    position: absolute;
-    left: -1.3em;
-    top: -0.1em;
-    font-size: 1.2em;
+code {
+    padding: 0.2em 0.4em;
+    font-size: 0.9em;
 }
 
-/* 中文段落首行缩进 */
-p {
-    text-indent: 2em;
-}
-
-/* 非段落元素取消缩进 */
+/* 重置不需要缩进的元素 */
 h1,
 h2,
 h3,
 h4,
 ul,
-li {
+ol,
+li,
+blockquote,
+pre,
+code {
     text-indent: 0;
 }
