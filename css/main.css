@@ -1,65 +1,121 @@
 body {
     margin: 60px auto;
     width: 70%;
+    /* 中文字体栈 */
+    font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: #999;
+    color: #4285f4;
+    /* 更醒目的链接色 */
+    transition: color 0.3s ease;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #ea4335;
+    /* 悬停变色 */
 }
 
 p,
 ul {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+    font-size: 1.1em;
+    /* 稍小的正文字号 */
+    line-height: 1.8em;
+    /* 增加行高 */
+    color: #444;
+    /* 深灰色更柔和 */
+    margin-bottom: 1.2em;
+    /* 增加段间距 */
 }
 
+/* 标题层级优化 */
 h1 {
-    font-size: 3em;
+    font-size: 2.2em;
 }
 
 h2 {
-    font-size: 2.7em;
+    font-size: 1.9em;
 }
 
 h3 {
-    font-size: 2.3em;
+    font-size: 1.6em;
 }
 
 h4 {
-    font-size: 1.9em;
+    font-size: 1.4em;
+}
+
+/* 标题增加间距 */
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    line-height: 1.3;
 }
 
 nav ul,
 footer ul {
     font-size: 1em;
-    padding: 0px;
+    padding: 0;
     list-style: none;
-    font-weight: bold;
 }
 
 nav ul li,
 footer ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 25px;
+    /* 增加导航项间距 */
 }
 
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    border-top: 1px solid #eaeaea;
+    /* 更浅的分隔线 */
+    font-size: 0.9em;
+    margin-top: 3em;
+    padding-top: 1.5em;
+    color: #777;
 }
 
-/* Blog */
+/* 博客文章列表优化 */
 ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
+    margin: 30px auto 50px;
+    /* 增加列表间距 */
+    font-size: 1.2em;
+    padding-left: 1.5em;
+    /* 中文缩进 */
 }
 
 ul.posts li {
     list-style: none;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+/* 添加中文项目符号 */
+ul.posts li:before {
+    content: "•";
+    color: #ea4335;
+    position: absolute;
+    left: -1.3em;
+    top: -0.1em;
+    font-size: 1.2em;
+}
+
+/* 中文段落首行缩进 */
+p {
+    text-indent: 2em;
+}
+
+/* 非段落元素取消缩进 */
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
+    text-indent: 0;
 }
