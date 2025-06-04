@@ -18,6 +18,10 @@ a:hover {
     color: #ea4335;
 }
 
+image {
+    width: auto;
+}
+
 p {
     font-size: 1.1em;
     margin-bottom: 1.2em;
@@ -30,8 +34,8 @@ blockquote {
     background-color: #f8f9fa;
     padding: 12px 20px;
     margin: 1.5em 0;
-    font-style: italic;
     color: #555;
+    text-indent: 0;
 }
 
 /* 标题优化 */
