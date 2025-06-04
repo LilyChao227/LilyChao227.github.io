@@ -70,34 +70,9 @@ ol {
     margin-bottom: 1.2em;
 }
 
-ul:not(.posts) {
-    font-size: 1.1em;
-}
-
 ul ul,
 ol ul {
     font-size: 1em;
-}
-
-ul.posts {
-    margin: 30px auto 50px;
-    font-size: 1.2em;
-    padding-left: 1.5em;
-}
-
-ul.posts li {
-    position: relative;
-    margin-bottom: 1em;
-    list-style: none;
-}
-
-ul.posts li:before {
-    content: "•";
-    color: #ea4335;
-    position: absolute;
-    left: -1em;
-    top: 0.15em;
-    font-size: 1.1em;
 }
 
 /* 导航和页脚 */
