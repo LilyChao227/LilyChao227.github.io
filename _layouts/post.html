@@ -1,9 +1,37 @@
----
-layout: default
----
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<!DOCTYPE html>
+<html>
 
-<div class="post">
-  {{ content }}
-</div>
+<head>
+  <title>{{ page.title }}</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="42256611-f077-454b-af0e-b6b7814855c1"></script>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+
+    <h1>{{ page.title }}</h1>
+    <p class="meta">{{ page.date | date_to_string }}</p>
+
+    <div class="post">
+      {{ content }}
+    </div>
+
+  </div><!-- /.container -->
+  <footer>
+    <ul>
+      <li><a href="mailto:chaolc227@163.com">E-mail</a></li>
+      <li><a href="https://github.com/LilyChao227">github.com/LilyChao227</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
