@@ -19,7 +19,10 @@ a:hover {
 }
 
 image {
-    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5em auto;
 }
 
 p {
@@ -35,6 +38,9 @@ blockquote {
     padding: 12px 20px;
     margin: 1.5em 0;
     color: #555;
+}
+
+blockquote p {
     text-indent: 0;
 }
 
