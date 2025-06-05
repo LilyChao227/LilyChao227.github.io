@@ -5,8 +5,7 @@ title: Lily Chao's personal blog
 
 <div class="blurb">
     <h1>你好，这里是赵立铖的个人博客</h1>
-    <p>我正在学习知识并尝试分享我掌握的知识，<a href="/about">你也可以在这里了解更多关于我的内容</a></p>
-    <h2>以下是我最新的博客文章，您可以点击阅读</h2>
+    <span>我正在学习并尝试分享我掌握的知识，<a href="/about">您也可以在这里了解更多关于我的内容</a></span>
     {% assign p = site.posts[0] %}
-    <a href="{{ p.url }}" title="{{ p.title }}">{{ p.title }}</a>
+    <span>点击阅读我最新的博客文章</span> >> <a href="{{ p.url }}" title="{{ p.title }}">{{ p.title }}</a>
 </div><!-- /.blurb -->
