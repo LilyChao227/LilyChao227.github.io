@@ -235,7 +235,8 @@ Excel是世界上最知名的办公套件MS Office提供的电子表格格式和
 
 3. 数据透视表：它可以在Excel中实现数据聚合，也就是聚合函数加上group by的功能，便于你在不同的维度上分析和计算数据。
 # 3. 其他
-我认为合格的产品经理应当具备这样的品质：真诚、自信、负责、求知。
+我认为合格的产品经理应当具备这样的品质：真诚、自信、负责、求知。  
+
 你可能还感兴趣：
 - [AWS亚马逊云从业者认证培训](https://aws.amazon.com/cn/training/learn-about/cloud-practitioner/)：了解云基础设施和分布式开发的基本知识
 - [SCRUM指南中文版](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Chinese-Simplified.pdf)：了解敏捷的游戏规则
